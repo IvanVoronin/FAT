@@ -88,12 +88,13 @@ $(document).ready(function() {
     });
   });
 
-  $dt_wrap.find('tbody').attr('data-toggle', 'tooltip')
+  $dt_wrap.find('td').attr('data-toggle', 'tooltip')
+                        .attr('data-container', 'body')
                         .attr('title', 'Drag the index of a row to rearrange the rows. Click on a row to see item contents.');
 
   $('[data-toggle="tooltip"]').tooltip({
     delay: {
-      show: 1000,
+      show: 2000,
       hide: 0
     }
   });

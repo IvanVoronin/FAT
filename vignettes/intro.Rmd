@@ -1,6 +1,6 @@
 ---
-title: "Intro into FAT (Factor Analysis Table) package"
-author: "Vignette Author"
+title: "Factor Analysis Table - Web-Widget"
+author: "Ivan Voronin"
 date: "`r Sys.Date()`"
 output:
   prettydoc::html_pretty:
@@ -11,6 +11,15 @@ vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+
+```{r include=FALSE, eval=FALSE}
+rmarkdown::render('intro.Rmd',
+                  output_file = '../docs/intro.html')
+```
+
+[ivan.a.voronin@gmail.com](mailto:ivan.a.voronin@gmail.com)
+
+[https://github.com/IvanVoronin/FAT](https://github.com/IvanVoronin/FAT)
 
 This package provides a web-widget for interactive presentation of results from
 exploratory factor analysis. The function `loadings2table` accepts a matrix, a
@@ -100,4 +109,5 @@ FA <- fa(bfi, nfactors = 5,
 loadings2table(FA, 
                hints = hints)
 ```
+
 
